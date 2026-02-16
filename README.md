@@ -5,4 +5,4 @@ labs-infra
 ├── vpn
 └── backup
 
-Anotações de montagem de ambientes.
+Anotações de montagem de ambientes. Eu estou construindo ambientes de infraestrutura de forma contínua.
