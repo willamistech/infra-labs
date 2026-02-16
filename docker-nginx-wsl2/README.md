@@ -2,6 +2,10 @@
 
 Projeto de laboratório para prática de containerização.
 
+- Docker rodando Nginx
+- Imagem customizada
+- Porta publicada
+
 ## Tecnologias
 - Docker
 - WSL2
@@ -62,7 +66,7 @@ Criação do Dockerfile
 ```bash
        New-Item Dockerfile -ItemType File
 ```
-Dentro do arquivo Dockerfile foi acidionado o caminho: 
+Dentro do arquivo Dockerfile foi acidionado o caminho de cópia do arquivo index.html para base do Nginx: 
 ```bash
        FROM nginx:latest
        COPY index.html /usr/share/nginx/html/index.html
