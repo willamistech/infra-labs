@@ -1,0 +1,22 @@
+name: CI Docker Lab
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v4
+
+    - name: Build principal
+      run: docker build -t principal ./principal
+
+    - name: Build portal
+      run: docker build -t portal ./portal
+
+    - name: Build erp
+      run: docker build -t erp ./erp
