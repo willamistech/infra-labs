@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  principal:
+    build: ./principal
+    container_name: principal-container
+    ports:
+      - "8080:80"
+
+  portal:
+    build: ./portal
+    container_name: portal-container
+    ports:
+      - "8082:80"
+
+  erp:
+    build: ./erp
+    container_name: erp-container
+    ports:
+      - "8081:80"
