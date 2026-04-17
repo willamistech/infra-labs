@@ -13,10 +13,10 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Build principal
-      run: docker build -t principal ./principal
+      run: docker build -t principal ./docker-nginx-wsl2/principal
 
     - name: Build portal
-      run: docker build -t portal ./portal
+      run: docker build -t portal ./docker-nginx-wsl2/portal
 
     - name: Build erp
-      run: docker build -t erp ./erp
+      run: docker build -t erp ./docker-nginx-wsl2/erp
